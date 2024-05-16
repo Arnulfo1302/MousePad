@@ -1,0 +1,57 @@
+<div class="w-full">
+  <div class="w-full"><!--Superior-->
+    <div class="flex w-full">
+      <div class="flex-row bg-green basis-[70%] justify-center">
+        <div class="flex justify-center">
+          <app-carousel></app-carousel> <!--Imagen-->
+        </div>
+        <div class="pl-[3rem] pr-[3rem]"> <!--info-->
+          <div
+            class="text-[#ECE8DC] flex w-full p-[1rem] h-[5.5rem] font-[Montserrat] text-[2.4rem]"
+          >
+            <p
+              (click)="mostrarTexto('Product Info')"
+              class="flex border-[.1rem] basis-[33.3%] justify-center items-center border-[#ECE8DC] cursor-pointer hover:text-[2.5rem]"
+            >
+              Product Info
+            </p>
+            <p
+              (click)="mostrarTexto('Shipping Info')"
+              class="flex border-[.1rem] basis-[33.3%] justify-center items-center border-[#ECE8DC] cursor-pointer hover:text-[2.5rem]"
+            >
+              Shipping Info
+            </p>
+            <p
+              (click)="mostrarTexto('Size Guide')"
+              class="flex border-[.1rem] basis-[33.3%] justify-center items-center border-[#ECE8DC] cursor-pointer hover:text-[2.5rem]"
+            >
+              Size Guide
+            </p>
+          </div>
+        </div>
+        <div class="pl-[4rem] pr-[4rem] font-[Montserrat] text-[1.6rem] text-[#ECE8DC]"> 
+            <p>{{printedText}}</p>
+        </div>
+      </div>
+      <div class="text-white text-[3.2rem] font-[Montserrat] basis-[30%]">  <!--Superior Derecha-->
+        <app-item-form></app-item-form>
+      </div>
+    
+    </div>
+    <div></div>
+  </div>
+  <div class="mt-[4.6rem] ml-[3.5rem]"><!--inferior-->
+    <p
+        class="text-white font-['Montserrat'] text-[2.4rem] max-[1400px]:text-[2.8rem] font-bold"
+      >
+        <!--Nombre Principal-->
+        Related Products
+      </p>
+      <div class="flex gap-[2rem] h-1/2">
+        <app-shared-item></app-shared-item>
+        <app-shared-item></app-shared-item>
+        <app-shared-item></app-shared-item>
+        <app-shared-item></app-shared-item>
+      </div>
+  </div>
+</div>

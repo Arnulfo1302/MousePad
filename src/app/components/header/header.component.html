@@ -1,0 +1,23 @@
+<div class="flex justify-center pl-[20rem] max-[1400px]:pl-[10rem] pr-[20rem] max-[1400px]:pr-[10rem]"><!--Main-->
+    <div class="mt-[5rem] flex justify-between w-full">
+      <div class="flex cursor-pointer"  routerLink="/home" routerLinkActive="activebutton"><!--Logo-->
+        <div class=" items-center bg-[#ECE8DC] w-[14.3rem] h-[5.3rem] rounded-[1.6rem]  flex justify-center">
+          <p class="ml-[.25em] text-[#CE6F00] font-['Montserrat'] text-[4rem] font-bold tracking-[.25em]">
+            PAD
+          </p></div>
+        <div class="items-center bg-[#CE6F00] w-[14.3rem] h-[5.3rem] rounded-[1.6rem]  flex justify-center">
+          <p class="ml-[.25em] text-[#ECE8DC] font-['Montserrat'] text-[4rem] font-bold tracking-[.25em]">
+            PAD
+          </p></div>
+      </div>
+      <div class="nav flex gap-[1rem]"><!--Iconos-->
+        <img class="cursor-pointer h-[5.3rem] w-[4.5rem]" src="../../../assets/icons/lupa.svg" alt="IconoLupa"/>
+        <div class="relative">
+          <img class="cursor-pointer h-[5.3rem] w-[4.5rem]" routerLink="/payment" src="../../../assets/icons/carro.svg" alt="Icono Carro de compras" />
+          <div #cartCountView class="hidden absolute top-5 right-5 transform translate-x-[50%] -translate-y-[50%] bg-[#CE6F00] w-[2rem] h-[2rem] rounded-full items-center justify-center">
+            <p #cartCount class="text-[1.5rem]">{{ cartItemCount }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,17 @@
+<h2 class="font-bold">Nombre item</h2>
+        <p class="text-[#ECE8DC]"><span>$</span>39,99</p>
+        <div class="flex-row pr-[2.8rem]">
+          <select class="cursor-pointer text-[2.4rem] border-[#ECE8DC] border-[.1rem] bg-transparent w-full h-[4.5rem]" [(ngModel)] = "selectedSize" (change)="onSelectedSize()"> <!--Tamaño-->
+            <option class="bg-[#222222]" value="l">Large (y" x YY")</option>
+            <option class="bg-[#222222]" value="xl">XLarge (y" x YY")</option>
+            <option class="bg-[#222222]" value="xxl">XXLarge (y" x YY")</option>
+          </select>
+          <div class="flex gap-[2rem]">
+            <div class="flex border-[#ECE8DC] border-[.1rem] w-[34%] mt-[2rem]">
+              <button class="cursor-pointer text-[#ECE8DC] w-full" (click)="decrease()" [disabled]="howMany <= 1">-</button>
+              <input class=" text-[#ECE8DC] w-full appearance-none bg-transparent  text-center" type="text" [(ngModel)]="howMany" (change)="onCantidadSeleccionada()" style="appearance: none;"> <!--Cantidad-->
+              <button class="text-[#ECE8DC] w-full bg-transparent" (click)="increase()" [disabled]="howMany >= 10">+</button>
+            </div>
+            <button id="addToCartBtn" (click)="addToCart()" class="w-3/4 font-bold text-[2.4rem] font-[Montserrat] bg-[#CE6F00] mt-[2rem] rounded-[.8rem]">Add to cart</button>
+          </div>
+        </div>
